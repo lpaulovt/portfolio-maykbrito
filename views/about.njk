@@ -6,17 +6,19 @@
 
 {% block content %}
     <div id="wrapper">
-        <img src="https://avatars2.githubusercontent.com/u/6643122?s=400&u=1e9e1f04b76fb5374e6a041f5e41dce83f3b5d92&v=4"
-            alt="Mayk Brito">
-        <h1>Mayk Brito</h1>
-        <h2>Instrutor - Rocketseat</h2>
-        <p>Programador full-stack, focado em trazer o melhor ensino para iniciantes em programação. Colaborador da <a
-                href="https://rocketseat.com.br/" target="_blank">Rocketseat</a></p>
+        <img src="{{about.avatar}}"
+            alt="Imagem de {{about.name}}">
+        <h1>{{about.name}}</h1>
+        <h2>{{about.role}}</h2>
+        <p>{{about.description}}</p>
     </div>
-
+    
     <div id="links-footer" class="links">
-        <a href="http://github.com/maykbrito" target="_blank">Github</a>
-        <a href="http://twitter.com/maykbrito" target="_blank">Twitter</a>
-        <a href="http://www.linkedin.com/in/maykbrito/" target="_blank">Linkedin</a>
+
+    {% for link in about.links %}
+
+        <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+        
+    {% endfor %}
     </div>
 {% endblock %}

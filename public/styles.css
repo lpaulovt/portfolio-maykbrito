@@ -152,14 +152,9 @@ header {
     visibility: visible;
 }
 
-iframe {
-    width: 100%;
-    height: 90%;
-    position: absolute;
-    top: 6%;
-}
 
 /* === FEATURED === */
+
 .featured-wrapper.card__image-container{
     position: relative;
 }
@@ -171,4 +166,25 @@ iframe {
     right: 5px;
     border-radius: 16px;
     top: 131px;
+}
+
+/* === VIDEO PAGE === */
+.card{
+    cursor: initial;
+}
+.video {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.card__video-container {
+    position: relative;
+    padding-top: 62.5%;
+}
+
+.card__video-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
 }
