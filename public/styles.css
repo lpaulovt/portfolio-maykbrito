@@ -74,6 +74,10 @@ header {
     color:var(--color-green);
 }
 
+.links {
+    margin-bottom: 40px;
+}
+
 #links-footer  a{
    border-bottom: 1px solid var(--color-green);
 }
@@ -82,7 +86,7 @@ header {
 
 .cards {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
